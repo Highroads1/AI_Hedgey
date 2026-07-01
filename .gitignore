@@ -1,0 +1,8 @@
+# Ignore master and strategy-specific environment variables
+.env
+*.env
+
+# Ignore temporary system files and caches
+__pycache__/
+.pytest_cache/
+*.pyc
