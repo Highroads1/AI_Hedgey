@@ -16,14 +16,9 @@ if %errorlevel% neq 0 (
     goto end
 )
 
-:: Step 2: Extract clean date/time variables out of local Windows environment strings
-for /f "tokens=2 delims==" %%I in ('wmic os get localdatetime /value') do set datetime=%%I
-set current_year=%datetime:~0,4%
-set current_month=%datetime:~4,2%
-set current_day=%datetime:~6,2%
-set current_hour=%datetime:~8,2%
-set current_minute=%datetime:~10,2%
-set formatted_timestamp=%current_year%-%current_month%-%current_day% %current_hour%:%current_minute%
+:: Step 2: Use native PowerShell to safely generate a clean, normalized timestamp
+echo [STATUS] Querying system clock...
+for /f "tokens=*" %%i in ('powershell -NoProfile -Command "Get-Date -Format 'yyyy-MM-dd HH:mm'"') do set formatted_timestamp=%%i
 
 :: Step 3: Commit staged assets using the standardized custom message formatting
 echo [STATUS] Generating snapshot commit token...
