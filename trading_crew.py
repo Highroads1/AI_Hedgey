@@ -143,10 +143,12 @@ def execute_alpaca_order(ticker: str, spend_amount: float) -> dict:
         
     # Guardrail 4: Secure Broker Transmission
     try:
-        alpaca_ticker = "BRK/B" if sanitized_ticker == "BRK.B" else sanitized_ticker
+        # UPDATED: Change "BRK/B" to "BRK.B" or "BRK B" to align with Alpaca's updated asset index
+        alpaca_ticker = "BRK.B" if sanitized_ticker == "BRK.B" else sanitized_ticker
+        
         order = alpaca_client.submit_order(
             symbol=alpaca_ticker,
-            notional=round(final_spend, 2),  # Utilizes fractional dollar entries rather than whole quantities
+            notional=round(final_spend, 2),  
             side='buy',
             type='market',
             time_in_force='day'
