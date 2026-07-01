@@ -212,11 +212,12 @@ live_equity_context = get_live_account_equity()
 
 # Calculate the display ceiling context so the agents can draft accurate pitches
 if current_strategy_name == "MARTINGALE":
-    display_ceiling = "Dynamic Martingale (Multiplied on down-days)"
+    display_ceiling = "Dynamic Martingale (Multiplied baseline dollar amount on down-days)"
 elif current_strategy_name == "KELLY":
-    display_ceiling = f"${round(live_equity_context * 0.10, 2)} (Half-Kelly Constraint)"
+    display_ceiling = f"exactly ${round(live_equity_context * 0.10, 2)} dollars (Half-Kelly Constraint)"
 else:
-    display_ceiling = f"${round(live_equity_context * 0.01, 2)} (Flat 1% Constraint)"
+    # Crucial change: explicitly tell the model 1% of $1000 is TEN DOLLARS, not 0.01
+    display_ceiling = f"exactly ${round(live_equity_context * 0.01, 2)} dollars (Flat 1% Constraint)"
 
 momentum_task = Task(
     description=f"Active Portfolio Mandate: {current_strategy_name}\nReview this live data stream:\n{live_market_snapshot}\nIdentify the single asset showing the strongest positive price velocity. Pitch its ticker and a suggested allocation based on our {display_ceiling} rules.",
@@ -234,7 +235,7 @@ value_task = Task(
 
 evaluate_risk_task = Task(
     description=f"Active Portfolio Mandate: {current_strategy_name}\nCompare the momentum pitch and the value pitch. Decide on exactly ONE final asset to trade today under our {current_strategy_name} framework.",
-    expected_output="Output exactly the final choice in this identical format: 'TICKER AMOUNT' (Example: 'WMT 25.00'). Do not write paragraphs.",
+    expected_output="Output exactly the final choice in this identical format: 'TICKER AMOUNT' (Example: 'WMT 10.00'). Crucial: The AMOUNT must be an absolute dollar value, never a percentage or decimal fraction of a dollar. Do not write paragraphs.",
     agent=risk_officer,
     context=[momentum_task, value_task],  # Merges both analyst papers dynamically for the Arbiter
     llm=local_brain
