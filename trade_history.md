@@ -146,3 +146,15 @@ Raw Reasoning Result: RGR 100.00
 
 ## Session Log [KELLY]: 2026-07-15 16:06:59.211856
 Raw Reasoning Result: RGR 10.00
+
+## Session Log [VANILLA]: 2026-07-16 17:38:14.336120
+Raw Reasoning Result: RGR 2.50
+
+## Session Log [VANILLA]: 2026-07-17 16:05:22.607412
+Raw Reasoning Result: CSCO 9.00
+
+## Session Log [MARTINGALE]: 2026-07-17 16:06:02.123088
+Raw Reasoning Result: CSCO 10.00
+
+## Session Log [KELLY]: 2026-07-17 16:06:43.390877
+Raw Reasoning Result: CSCO 46.47
