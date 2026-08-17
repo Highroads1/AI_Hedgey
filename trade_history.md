@@ -329,3 +329,12 @@ Raw Reasoning Result: XOM 10.00
 
 ## Session Log [KELLY]: 2026-08-14 16:06:34.259007
 Raw Reasoning Result: XOM 44.61
+
+## Session Log [VANILLA]: 2026-08-17 16:05:45.268452
+Raw Reasoning Result: LLY 9.94
+
+## Session Log [MARTINGALE]: 2026-08-17 16:06:33.537745
+Raw Reasoning Result: LLY 100.00
+
+## Session Log [KELLY]: 2026-08-17 16:07:15.259241
+Raw Reasoning Result: LLY 44.42
