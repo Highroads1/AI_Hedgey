@@ -696,3 +696,23 @@ This markdown table provides a clear and concise overview of the current perform
 
 This markdown table provides a clear and concise overview of the current performance rankings, with the Vanilla 1% Strategy leading the pack. The Kelly Criterion Strategy stands out as the most divergent, highlighting potential risks that need to be addressed.
 ---
+
+## Audit Run: 2026-08-21 16:07:26
+```markdown
+# Strategy Performance Leaderboard
+
+| Strategy Name                | Current Net Value |
+|------------------------------|-------------------|
+| Vanilla 1% Strategy            | $1000.99           |
+| Martingale Scaling Strategy  | $999.11           |
+| Kelly Criterion Strategy     | $932.10           |
+
+# Performance Observations
+
+- **Vanilla 1% Strategy** is currently leading with a net value of $1000.99.
+- **Martingale Scaling Strategy** shows a slight divergence from the leading strategy with a net value of $999.11, indicating a minor risk of underperformance.
+- **Kelly Criterion Strategy** is lagging behind with a net value of $932.10, suggesting a significant risk of underperformance and potential for substantial losses if not managed properly.
+```
+
+This markdown table provides a clear and concise overview of the current performance rankings and highlights any notable risks or divergences among the trading strategies.
+---
