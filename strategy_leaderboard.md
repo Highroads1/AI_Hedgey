@@ -988,3 +988,22 @@ This markdown table provides a clear and concise overview of the current perform
 
 **Note:** The Martingale Scaling Strategy has the highest net value, making it the current leading strategy. However, the Kelly Criterion Strategy has the lowest net value, which could indicate significant risk or inefficiency.
 ---
+
+## Audit Run: 2026-09-15 16:07:17
+```markdown
+# Strategy Performance Leaderboard
+
+| Strategy Name                | Current Net Value |
+|------------------------------|-------------------|
+| Vanilla 1% Strategy            | $985.16           |
+| Martingale Scaling Strategy    | $990.66           |
+| Kelly Criterion Strategy       | $884.72           |
+
+# Performance Observations
+
+- **Leading Strategy:** Martingale Scaling Strategy with a current net value of $990.66.
+- **Massive Divergence:** The Kelly Criterion Strategy has a significantly lower net value of $884.72 compared to the other strategies, indicating potential risks or inefficiencies in its performance.
+```
+
+This markdown table provides a clear and concise overview of the current performance of the trading strategies, with the Martingale Scaling Strategy leading the pack. The Kelly Criterion Strategy stands out as a potential area of concern due to its substantial divergence from the other strategies.
+---
