@@ -527,3 +527,12 @@ Raw Reasoning Result: AVGO 100.00
 
 ## Session Log [KELLY]: 2026-09-18 16:10:57.587039
 Raw Reasoning Result: 'LLY 45.57'
+
+## Session Log [VANILLA]: 2026-09-21 16:06:22.219454
+Raw Reasoning Result: TSLA 9.99
+
+## Session Log [MARTINGALE]: 2026-09-21 16:06:52.812472
+Raw Reasoning Result: TSLA 1000.00
+
+## Session Log [KELLY]: 2026-09-21 16:07:29.394196
+Raw Reasoning Result: TSLA 46.50
