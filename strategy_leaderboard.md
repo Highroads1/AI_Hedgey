@@ -1594,3 +1594,22 @@ This markdown table provides a clear and concise overview of the current perform
 - The **Vanilla 1% Strategy** is currently leading with a net value of $1035.70.
 - There is a significant divergence between the **Vanilla 1% Strategy** and the **Kelly Criterion Strategy**, with the former outperforming the latter by $92.61. This could indicate potential risks or inefficiencies in the Kelly Criterion Strategy's approach.
 ---
+
+## Audit Run: 2026-11-06 16:13:47
+```markdown
+# Strategy Performance Leaderboard
+
+| Strategy Name                | Current Net Value |
+|------------------------------|-------------------|
+| Vanilla 1% Strategy            | $1039.51           |
+| Martingale Scaling Strategy  | $1007.50           |
+| Kelly Criterion Strategy     | $961.02           |
+
+# Performance Observations
+
+- **Vanilla 1% Strategy** is currently leading with a net value of $1039.51.
+- **Martingale Scaling Strategy** and **Kelly Criterion Strategy** have significant divergences from the leading strategy, with net values of $1007.50 and $961.02, respectively. This suggests potential risks or inefficiencies in these strategies that may need further investigation.
+```
+
+This markdown table provides a clear and concise overview of the current performance rankings, with the leading strategy highlighted. The bullet points at the bottom draw attention to the notable differences between the leading strategy and the others, indicating areas that may require further analysis.
+---
